@@ -70,7 +70,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ministries <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="HRD.jsp">Human Resources</a></li>
-							<li><a href="Aggri.jsp">Aggriculture</a></li>
+							<li><a href="Aggri.jsp">Agriculture</a></li>
 							<li><a href="Rail.jsp">Railways</a></li>
 							<li class="divider"></li>
 							<li><a href="Home.jsp">Home Ministry</a></li>
@@ -83,7 +83,7 @@
 						<a href="# class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">${userId} <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="Profile.jsp">Profile</a></li>
-							<li><a href="Profile.jsp">Change Passowrd</a></li>
+							<li><a href="Profile.jsp">Change Password</a></li>
 							<li class="divider"></li>
 							<li><a href="ComingSoon.html">Link Adhar</a></li>
 						</ul>
@@ -102,8 +102,8 @@
 				<div class="modal-body">
 					By Clicking on LogOut you will close this session.
 					<div class="modal-footer">
-						<form method="get" action="LogOutServlet">
-						<input type="hidden" name="userid" valiue="">
+						<form method="post" action="LogoutServlet">
+						<input type="hidden" name="userid" valiue='${userId}'>
 						<input type="submit" class="btn btn-primary" value="LogOut">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</form>
@@ -120,7 +120,7 @@
 	<div class="row">	
 		<div class="col-sm-offset-2 col-sm-8">
 		<p class="main-text">
-			Here at People's Empowerement Portal we not only listens to your complains and suggestions but we feel them the way you do. At <strong>P E P</strong> your worries becomes ours and we with our team of dedicated problem solvers try to solve your problem as soon as we can and try to bring smiles to our users. It is our guarantee that no other day would be wasted for solving your problem. At PEP, we evolve each day. With State of Art Infrastructure our computers are learning each day to solve new problems. We use machine learning to learn problems that worries you. When your problems are solved we with the help of Deep Learning and Sentiment Analysis, analyse your feedbacks to evolve. You can count on our technology. We Innovate.
+			Here at People's Empowerment Portal we not only listens to your complains and suggestions but we feel them the way you do. At <strong>P E P</strong> your worries becomes ours and we with our team of dedicated problem solvers try to solve your problem as soon as we can and try to bring smiles to our users. It is our guarantee that no other day would be wasted for solving your problem. At PEP, we evolve each day. With State of Art Infrastructure our computers are learning each day to solve new problems. We use machine learning to learn problems that worries you. When your problems are solved we with the help of Deep Learning and Sentiment Analysis, analyse your feedbacks to evolve. You can count on our technology. We Innovate.
 		</p>
 		</div>
 		<!-- <div class="col-sm"></div> -->

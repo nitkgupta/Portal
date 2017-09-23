@@ -21,12 +21,13 @@ public class UtilUserImpl implements UtilUser {
 	public boolean logout(String userId) {
 		UserBean bean = new UserBean();
 		bean.setUserId(userId);
-		AuthenticationImpl auth = new AuthenticationImpl();
-		if (auth.changeLoginStatus(bean, 0)) {
-			return true;
-		} else {
-			return false;
-		}
+//		AuthenticationImpl auth = new AuthenticationImpl();
+//		if (auth.changeLoginStatus(bean, 0)) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+		return true;
 	}
 
 	@Override
