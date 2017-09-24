@@ -117,7 +117,7 @@ public class ComplainImpl implements Complain {
 		try {
 			PreparedStatement ps=con.prepareStatement("select * from complain where min_id=?");
 			ComplainBean bean=new ComplainBean();
-			ResultSet rs=ps.executeQuery();
+			ResultSet rs=ps.executeQuery();// ok
 			while(rs.next()) {
 				bean.setComp_id(rs.getString(1));
 				bean.setNgoid(rs.getString(2));
