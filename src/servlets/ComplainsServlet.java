@@ -18,11 +18,11 @@ public class ComplainsServlet extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String s = request.getParameter("t1");
+		String complain = request.getParameter("t1");
 		ComplainImpl dao = new ComplainImpl();
 		ComplainBean bean = new ComplainBean();
-		bean.set
-		dao.createComplain(bean);
+		bean.setComplain(complain);
+		String result = dao.createComplain(bean);
 	}
 
 }

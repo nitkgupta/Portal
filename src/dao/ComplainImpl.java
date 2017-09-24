@@ -16,8 +16,20 @@ public class ComplainImpl implements Complain {
 	@Override
 	public String createComplain(ComplainBean bean) {
 		try {
+			PreparedStatement ps1 = con.prepareStatement("SELECT * from ID");
+			ResultSet rs = ps1.executeQuery();
+			rs.next();
+			int max = rs.getInt(2);
+			ps1 = con.prepareStatement("UPDATE ID SET complain_id=? where complain_id=?");
+			ps1.setInt(1, max + 1);
+			ps1.setInt(2, max);
+
+			System.out.println(ps1.executeUpdate());
+			System.out.println(max);
+
+			String id = "CT" + max;
 			PreparedStatement ps = con.prepareStatement("insert into complain values(?,?,?,?,?)");
-			ps.setString(1, bean.getComp_id());
+			ps.setString(1, ""+max+1);
 			ps.setString(2, bean.getNgoid());
 			ps.setString(3, bean.getMin_id());
 			ps.setString(4, bean.getType());
