@@ -59,11 +59,11 @@
 					<li class="dropdown">
 						<a href="# class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complains <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="Complain.html">Lodge a Complain</a></li>
-							<li><a href="Status.html">Check Status</a></li>
-							<li><a href="Withdraw.html">Withdraw Complain</a></li>
+							<li><a href="complain.html">Lodge a Complain</a></li>
+							<li><a href="status.html">Check Status</a></li>
+							<li><a href="withdraw.html">Withdraw Complain</a></li>
 							<li class="divider"></li>
-							<li><a href="Report.html">Report Unsolved Complain</a></li>
+							<li><a href="report.html">Report Unsolved Complain</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

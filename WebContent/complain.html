@@ -141,6 +141,7 @@
 					<h3>Fill the Form. Your Complains will be addressed soon</h3>
 					<form method="post" action="ComplainsServlet" class="form-horizontal">
 						<input type="hidden" name="userid">
+						<input type="hidden" name="ministry" value="all">
 						Please Describe Your Complain:
 						<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
 						<br>
@@ -196,7 +197,9 @@
 											<label for="select" class="control-label">Complain Type
 											</div>
 											<div class="col-xs-8">
-												<select class="form-control" id="select" name="child">
+												<input type="hidden" name="ministry" value="hrd">
+												<select class="form-control" id="type" name="child">
+												
 													<!-- <option value="hrd">Human Resource</option> -->
 													<option value="traf">Child Trafiking</option>
 													<option value="labour">Child Labour</option>
