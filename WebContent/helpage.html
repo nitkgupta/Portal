@@ -1,0 +1,197 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>NGO | HelpAge India</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	
+	#main-text{
+		text-align: justify;
+		font-size: 16px;
+	}
+	.bg-2{
+		background-color: #222222;
+		border-color: #222222;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		color: 222222;
+		text-align: center;
+	}
+	.main-body{
+		
+		padding-bottom: 120px;
+	}
+</style>
+</head>
+<body>
+
+	<!-- Import Header to this page -->
+
+	<div class="container main-body">
+		<div class="row">
+			<h1>HelpAge India</h1>
+			<hr>
+			<div class="col-xs-7">
+				<h2>Welcome to HelpAge India</h2>
+				<p id="main-text">HelpAge India is a secular, apolitical, non-profit and a non-governmental organisation in India registered under the Societies' Registration Act of 1860. Set up in 1978,HelpAge India is a registered national level voluntary organisation. Since its foundation, its mission is to work for the cause and care of disadvantaged older persons, in order to improve the quality of their lives</p>
+			</div>
+
+
+
+
+
+			<!-- Right Side -->
+			<div class="col-xs-5">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#work" data-toggle="tab" aria-expanded="true">Works</a></li>
+					<li class=""><a href="#comment" data-toggle="tab" aria-expanded="false">User Comments</a></li>
+					<li class=""><a href="#rating" data-toggle="tab" aria-expanded="false">Ratings</a></li>
+					<!-- <li class="disabled"><a>NGO</a></li> -->
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+						<li class="divider"></li>
+						<li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+					</ul>
+				</li> -->
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade active in" id="work">
+					<h3>HelpAge India Running Programs.</h3>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Mobile Medical Units (MMU)</h3>
+						</div>
+						<div class="panel-body">
+							<p>These are mobile health vans that provides basic healthcare virtually at the doorsteps of destitute elderly. The program provides 1.7 million free treatments annually, through its 97 Mobile Medical Units working in 1085 community locations in 20 states across India. The program has been recognized as Asia's largest Mobile Medical Program for the elderly.
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 75%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Elder Helplines</h3>
+						</div>
+						<div class="panel-body">
+							<p>HelpAge India Elder Helplines operate across India in 20 state capitals attending to calls reporting abuse, abandonment, harassment by family members and others, legal queries and provide rescue services during emergencies. It provides information to elders on access to various elderly schemes and address problems such as isolation abuse & neglect, facilitate emergency responses and provide linkages with the government, police, referral rescue & relief services.
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 60%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="comment">
+				<br>
+					<!-- <h4>Your Comments will be heared directly by the Ministry</h4> -->
+			<!-- 		<div class="alert alert-dismissible alert-info">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Complains Involving Multiple Ministry should go in General Complains.
+					</div>
+					<div class="alert alert-dismissible alert-warning">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Please Use the Next tab for H R D Ministry.
+					</div> -->
+					<form method="post" action="ComplainsServlet" class="form-horizontal">
+						<input type="hidden" name="userid">
+						<div class="row">
+							<div class="col-xs-4">
+								<!-- <label for="select" class="control-label">Ministry -->
+							</div>
+							</div>	
+							<h4>Please Describe Your Comments:</h4>
+							<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+							<br>
+							<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+						</form>
+					</div>
+					<div class="tab-pane fade" id="rating">
+						<ul class="nav nav-pills navbar-right">
+							<li class="active"><a href="#child" data-toggle="tab" aria-expanded="true">Programs</a></li>
+							<!-- <li class=""><a href="#women" data-toggle="tab" aria-expanded="false">Regular</a></li> -->
+							<!-- <li class=""><a href="#other" data-toggle="tab" aria-expanded="false">Other</a></li> -->
+						</ul>
+						<br>
+						<br>
+						<div id="" class="tab-content">
+							<!-- <div class="tab-pane fade active in" id="child"> -->
+								<h3>Rating Regarding Scheme</h3>
+								<form method="post" action="RatingServlet" class="form-horizontal">
+									<input type="hidden" name="userid">
+									<div class="row">
+										<div class="col-xs-4">			
+											<label for="scheme" class="control-label">Choose Scheme</label>
+										</div>
+										<div class="col-xs-8">
+												<select class="form-control" id="select" name="scheme">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="Mobile Medical Units (MMU)">Mobile Medical Units (MMU)</option>
+													<option value="Cataract Surgeries">Cataract Surgeries</option>
+													<option value="Cancer and Palliative Care">Cancer and Palliative Care</option>
+													<option value="Agecare/Physiocare centres">Agecare/Physiocare centres</option>
+													<option value="Support a Gran">Support a Gran</option>
+												</select>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-xs-4">
+											<label for="rating" class="control-label">Rating
+											</div>
+											<div class="col-xs-4">
+												<select class="form-control" id="select" name="child">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>	
+										<br>
+										<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+									</form>
+								</div>
+								
+									<div class="tab-pane fade" id="other">
+										<h3>Fill the Form. Your Complains will be adressed soon</h3>
+										<form method="post" action="ComplainsServlet" class="form-horizontal">
+											<input type="hidden" name="userid">
+											Please Describe Your Complain:
+											<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+											<br>
+											<input type="submit" class="btn btn-primary" value="Complain" class="form-control">
+										</form>
+									</div>
+								</div>
+				
+								<div class="tab-pane fade" id="dropdown1">
+									<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+								</div>
+								<div class="tab-pane fade" id="dropdown2">
+									<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="text-center navbar-fixed-bottom bg-2">
+
+					<p style="color: white;">Copyright 2017 People Empowerment Portal</p>
+				</footer>
+			</body>
+			</html>

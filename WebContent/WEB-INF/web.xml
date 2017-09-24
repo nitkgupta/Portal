@@ -63,4 +63,14 @@
     <servlet-name>Signup</servlet-name>
     <url-pattern>/Signup</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ComplainsServlet</display-name>
+    <servlet-name>ComplainsServlet</servlet-name>
+    <servlet-class>servlets.ComplainsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComplainsServlet</servlet-name>
+    <url-pattern>/ComplainsServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

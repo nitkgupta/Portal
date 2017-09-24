@@ -1,0 +1,327 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Agriculture Ministry</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	
+	#main-text{
+		text-align: justify;
+		font-size: 16px;
+	}
+	.bg-2{
+		background-color: #222222;
+		border-color: #222222;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		color: 222222;
+		text-align: center;
+	}
+	.main-body{
+		
+		padding-bottom: 120px;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Welcome.jsp">PEP</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown">
+						<a href="# class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complains <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Complain.html">Lodge a Complain</a></li>
+							<li><a href="Status.html">Check Status</a></li>
+							<li><a href="Withdraw.html">Withdraw Complain</a></li>
+							<li class="divider"></li>
+							<li><a href="Report.html">Report Unsolved Complain</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ministries <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="HRD.jsp">Human Resources</a></li>
+							<li><a href="Agg.jsp">Aggriculture</a></li>
+							<li><a href="Rail.jsp">Railways</a></li>
+							<li class="divider"></li>
+							<li><a href="Home.jsp">Home Ministry</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#myModal">LogOut</a></li>
+					<li class="dropdown">
+						<a href="# class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Profile.jsp">Profile</a></li>
+							<li><a href="Profile.jsp">Change Passowrd</a></li>
+							<li class="divider"></li>
+							<li><a href="ComingSoon.html">Link Adhar</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-warning">Are you sure you want to LogOut?</h4>
+				</div>
+				<div class="modal-body">
+					By Clicking on LogOut you will close this session.
+					<div class="modal-footer">
+						<form method="get" action="LogOutServlet">
+							<input type="hidden" name="userid" valiue="">
+							<input type="submit" class="btn btn-primary" value="LogOut">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Header Complete Anurag :) -->
+
+	<div class="container main-body">
+		<div class="row">
+			<h1>Ministry of Agriculture</h1>
+			<hr>
+			<div class="col-xs-7">
+				<h2>Ministry of Agriculture & Farmers Welfare.</h2>
+				<p id="main-text">The Ministry of Agriculture and Farmers Welfare (formerly Ministry of Agriculture), a branch of the Government of India, is the apex body for formulation and administration of the rules and regulations and laws related to agriculture in India. The 3 broad areas of scope for the Ministry are agriculture, food processing and co-operation. The agriculture ministry is headed by Minister of Agriculture Radha Mohan Singh. S S Ahluwalia, Sudarshan Bhagat & Parshottam Rupalai are the Ministers of State.</p>
+			</div>
+
+
+
+
+
+			<!-- Right Side -->
+			<div class="col-xs-5">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#work" data-toggle="tab" aria-expanded="true">Works</a></li>
+					<li class=""><a href="#comment" data-toggle="tab" aria-expanded="false">User Comments</a></li>
+					<li class=""><a href="#rating" data-toggle="tab" aria-expanded="false">Ratings</a></li>
+					<!-- <li class="disabled"><a>NGO</a></li> -->
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+						<li class="divider"></li>
+						<li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+					</ul>
+				</li> -->
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade active in" id="work">
+					<h3>Agriculture Ministry's Present Works.</h3>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Rashtriya Krishi Vikas Yojana</h3>
+						</div>
+						<div class="panel-body">
+							<p>Rashtriya Krishi Vikas Yojana (Hindi: राष्ट्रीय कृषि विकास योजना; English: National Agriculture Development Programme) is a State Plan Scheme of Additional Central Assistance launched in August 2007 as a part of the 11th Five Year Plan by the Government of India. Launched under the aegis of the National Development Council, it seeks to achieve 4% annual growth in agriculture through development of Agriculture and its allied sectors (as defined by the Planning Commission (India)) during the period under the 11th Five Year Plan (2007–11).
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 55%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">National Development Council</h3>
+						</div>
+						<div class="panel-body">
+							<p>The National Development Council (NDC) or the Rashtriya Vikas Parishad is the apex body for decision making and deliberations on development matters in India, presided over by the Prime Minister. It was set up on 6 August 1952 to strengthen and mobilize the effort and resources of the nation in support of the Plan, to promote common economic policies in all vital spheres, and to ensure the balanced and rapid development of all parts of the country. The Council comprises the Prime Minister, the Union Cabinet Ministers, Chief Ministers of all States or their substitutes, representatives of the Union Territories and the members of the NITI Aayog.
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 70%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="comment">
+				<br>
+					<!-- <h4>Your Comments will be heared directly by the Ministry</h4> -->
+			<!-- 		<div class="alert alert-dismissible alert-info">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Complains Involving Multiple Ministry should go in General Complains.
+					</div>
+					<div class="alert alert-dismissible alert-warning">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Please Use the Next tab for H R D Ministry.
+					</div> -->
+					<form method="post" action="ComplainsServlet" class="form-horizontal">
+						<input type="hidden" name="userid">
+						<div class="row">
+							<div class="col-xs-4">
+								<!-- <label for="select" class="control-label">Ministry -->
+							</div>
+								<div class="col-xs-8">
+									<!-- <select class="form-control" id="select" name="ministry"> -->
+										<!-- <option value="hrd">Human Resource</option> -->
+										<!-- <option value="aggri">Aggriculture</option>
+										<option value="rail">Railway</option>
+										<option value="home">Home</option>
+									</select> -->
+								</div>
+							</div>	
+							<h4>Please Describe Your Comments:</h4>
+							<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+							<br>
+							<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+						</form>
+					</div>
+					<div class="tab-pane fade" id="rating">
+						<ul class="nav nav-pills navbar-right">
+							<li class="active"><a href="#child" data-toggle="tab" aria-expanded="true">Scheme</a></li>
+							<li class=""><a href="#women" data-toggle="tab" aria-expanded="false">Regular</a></li>
+							<!-- <li class=""><a href="#other" data-toggle="tab" aria-expanded="false">Other</a></li> -->
+						</ul>
+						<br>
+						<br>
+						<div id="" class="tab-content">
+							<div class="tab-pane fade active in" id="child">
+								<h3>Rating Regarding Scheme</h3>
+								<form method="post" action="RatingServlet" class="form-horizontal">
+									<input type="hidden" name="userid">
+									<div class="row">
+										<div class="col-xs-4">			
+											<label for="scheme" class="control-label">Choose Scheme</label>
+										</div>
+										<div class="col-xs-8">
+												<select class="form-control" id="select" name="scheme">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="Rashtriya Krishi Vikas Yojana">Rashtriya Krishi Vikas Yojana</option>
+													<option value="National Development Council">National Development Council</option>
+												</select>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-xs-4">
+											<label for="rating" class="control-label">Rating
+											</div>
+											<div class="col-xs-4">
+												<select class="form-control" id="select" name="child">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>	
+										<!-- <br> -->
+										<!-- Please enter the Email Address: -->
+										<!-- <input type="text" name="childname" placeholder="Child Name" class="form-control" required>
+										<br>
+
+										<input type="number" name="childage" placeholder="Child Age" class="form-control">
+										<br>
+ 										-->
+										<!-- <input type="text" name="childadd" placeholder="Email Address" class="form-control" required> -->
+										<br>
+
+										<!-- Gender &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+										<input type="radio" name="childgender"  value="male">&nbsp &nbsp  Boy &nbsp &nbsp &nbsp
+										<input type="radio" name="childgender"  value="female">&nbsp &nbsp Girl 
+										<br><br>-->
+
+										<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+									</form>
+								</div>
+								<div class="tab-pane fade" id="women">
+									<h3>Rating Regarding Regular Work</h3>
+									<form method="post" action="ComplainsServlet" class="form-horizontal">
+										<input type="hidden" name="userid">
+										<div class="row">
+										<div class="col-xs-4">			
+											<label for="scheme" class="control-label">Work</label>
+										</div>
+											<div class="col-xs-8">
+											<input type="text" name="workname" placeholder="Work Name" class="form-control" required>
+											<br>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-4">
+												<label for="select" class="control-label">Rating
+											</div>
+											<div class="col-xs-4">
+												<select class="form-control" id="select" name="child">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+											</div>	
+											<br>
+											<!-- Please enter the Email Address:	 -->
+											<!-- <input type="text" name="womenname" placeholder="Women Name" class="form-control" required>
+											<br>
+
+											<input type="number" name="womenage" placeholder="Women Age" class="form-control">
+											<br> -->
+
+											<!-- <input type="text" name="email" placeholder="Email Address" class="form-control" required> -->
+											<!-- <br> -->
+
+											<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+										</form>
+									</div>
+									<div class="tab-pane fade" id="other">
+										<h3>Fill the Form. Your Complains will be adressed soon</h3>
+										<form method="post" action="ComplainsServlet" class="form-horizontal">
+											<input type="hidden" name="userid">
+											Please Describe Your Complain:
+											<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+											<br>
+											<input type="submit" class="btn btn-primary" value="Complain" class="form-control">
+										</form>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="dropdown1">
+									<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+								</div>
+								<div class="tab-pane fade" id="dropdown2">
+									<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="text-center navbar-fixed-bottom bg-2">
+
+					<p style="color: white;">Copyright 2017 People Empowerment Portal</p>
+				</footer>
+			</body>
+			</html>

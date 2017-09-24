@@ -1,0 +1,190 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>NGO | Going To School</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	
+	#main-text{
+		text-align: justify;
+		font-size: 16px;
+	}
+	.bg-2{
+		background-color: #222222;
+		border-color: #222222;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		color: 222222;
+		text-align: center;
+	}
+	.main-body{
+		
+		padding-bottom: 120px;
+	}
+</style>
+</head>
+<body>
+
+	<!-- Import Header to this page -->
+
+	<div class="container main-body">
+		<div class="row">
+			<h1>Going To School</h1>
+			<hr>
+			<div class="col-xs-7">
+				<h2>Welcome to Going To School</h2>
+				<p id="main-text">Going to School, is creative not-for-profit trust that creates design-driven stories to empower all children with the skills they need to participate in the world around them, solving problems like poverty, unemployment, and inequality. The organization takes its name from a children's book, Going to School in India,published by Penguin Random House in India in 2004. The children's book was published in the USA by Charlesbridge Publishers[2] in 2005. Registered in New Delhi in 2003, the organization’s content has been incorporated in national curriculum- National Council of Education Research and Training (NCERT) textbooks in India where it’s read by over 10 million children every year.</p>
+			</div>
+
+
+
+
+
+			<!-- Right Side -->
+			<div class="col-xs-5">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#work" data-toggle="tab" aria-expanded="true">Works</a></li>
+					<li class=""><a href="#comment" data-toggle="tab" aria-expanded="false">User Comments</a></li>
+					<li class=""><a href="#rating" data-toggle="tab" aria-expanded="false">Ratings</a></li>
+					<!-- <li class="disabled"><a>NGO</a></li> -->
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+						<li class="divider"></li>
+						<li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+					</ul>
+				</li> -->
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade active in" id="work">
+					<h3>Going To School Running Programs</h3>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Be! Schools</h3>
+						</div>
+						<div class="panel-body">
+							<p>Be! Schools is a series of 50 design-driven stories that each teach children an entrepreneurial skill from identifying a problem, to taking initiative and making a plan. 10 stories are epic graphic novels of setting up a sustainable enterprise. Every year based on feedback from 150,000 kids, they create new stories about new heroes and new enterprises. They work directly in 1,300 secondary government schools in Bihar and Jharkhand, reaching 150,000 children in Grade 9 with skills stories and skills challenges for them to solve problems they see in their communities. Every week children get the opportunity to learn entrepreneurial skills by creating innovative projects in their community. They go out and interview entrepreneurs around them, identify problems in their neighborhood,prepare business plans and do market research for innovative products.
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 75%"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Financial Skills Radio</h3>
+						</div>
+						<div class="panel-body">
+							<p>Paison Ki Paathshala, a radio feature that aims to educate India’s youth population in Delhi, Mumbai, Pune and Chennai on the financial literacy skills they need to get a job, create a job, start a business, manage their money. The show will hosted by RJs who are also young and trying to find answers to the questions that their peers across the country have regarding money and experts will answer questions, give money tips. The show will be a powerful platform to encourage financial habits and ensure young people become a part of the financial system.
+							</p>
+							<h5 class="text-info">Sucess of this Plan:</h5>
+							<div class="progress progress-striped active">
+								<div class="progress-bar" style="width: 60%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="comment">
+				<br>
+					<!-- <h4>Your Comments will be heared directly by the Ministry</h4> -->
+			<!-- 		<div class="alert alert-dismissible alert-info">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Complains Involving Multiple Ministry should go in General Complains.
+					</div>
+					<div class="alert alert-dismissible alert-warning">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Please Use the Next tab for H R D Ministry.
+					</div> -->
+					<form method="post" action="ComplainsServlet" class="form-horizontal">
+						<input type="hidden" name="userid">
+						<div class="row">
+							<div class="col-xs-4">
+								<!-- <label for="select" class="control-label">Ministry -->
+							</div>
+							</div>	
+							<h4>Please Describe Your Comments:</h4>
+							<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+							<br>
+							<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+						</form>
+					</div>
+					<div class="tab-pane fade" id="rating">
+						<ul class="nav nav-pills navbar-right">
+							<li class="active"><a href="#child" data-toggle="tab" aria-expanded="true">Programs</a></li>
+							<!-- <li class=""><a href="#women" data-toggle="tab" aria-expanded="false">Regular</a></li> -->
+							<!-- <li class=""><a href="#other" data-toggle="tab" aria-expanded="false">Other</a></li> -->
+						</ul>
+						<br>
+						<br>
+						<div id="" class="tab-content">
+							<!-- <div class="tab-pane fade active in" id="child"> -->
+								<h3>Rating Regarding Scheme</h3>
+								<form method="post" action="RatingServlet" class="form-horizontal">
+									<input type="hidden" name="userid">
+									<div class="row">
+										<div class="col-xs-4">			
+											<label for="scheme" class="control-label">Choose Scheme</label>
+										</div>
+										<div class="col-xs-8">
+												<select class="form-control" id="select" name="scheme">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="Be! Schools">Be! Schools</option>
+													<option value="Girl Stars">Girl Stars</option>
+													<option value="Children’s Scrappy News Service">Children’s Scrappy News Service</option>
+													<option value="Financial Skills Radio">Financial Skills Radio</option>
+													<option value="Skool App: Free stories for children">Skool App: Free stories for children</option>
+												</select>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-xs-4">
+											<label for="rating" class="control-label">Rating
+											</div>
+											<div class="col-xs-4">
+												<select class="form-control" id="select" name="child">
+													<!-- <option value="hrd">Human Resource</option> -->
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>	
+										<br>
+										<input type="submit" class="btn btn-primary" value="Submit" class="form-control">
+									</form>
+								</div>
+								
+									<div class="tab-pane fade" id="other">
+										<h3>Fill the Form. Your Complains will be adressed soon</h3>
+										<form method="post" action="ComplainsServlet" class="form-horizontal">
+											<input type="hidden" name="userid">
+											Please Describe Your Complain:
+											<textarea  class="form-control" rows="5" id="textArea" name="t1"></textarea>
+											<br>
+											<input type="submit" class="btn btn-primary" value="Complain" class="form-control">
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="text-center navbar-fixed-bottom bg-2">
+
+					<p style="color: white;">Copyright 2017 People Empowerment Portal</p>
+				</footer>
+			</body>
+			</html>

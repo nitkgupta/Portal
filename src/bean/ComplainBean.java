@@ -5,6 +5,13 @@ public class ComplainBean {
 	private String ngoid;
 	private String min_id;
 	private String type;
+	private String complain;
+	public String getComplain() {
+		return complain;
+	}
+	public void setComplain(String complain) {
+		this.complain = complain;
+	}
 	public String getComp_id() {
 		return comp_id;
 	}
